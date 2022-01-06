@@ -1,4 +1,7 @@
-document.querySelector('.visually-hidden').outerHTML = `
+// const selectAll = document.querySelectorAll('.visually-hidden')
+
+const select = document.querySelector('.visually-hidden')
+select.outerHTML = `
 <div class="main">
         <div class="multipleSelection">
             <div class="head">
@@ -66,27 +69,18 @@ const btn = document.querySelector('#btn1')
 const activeCheckbox = document.getElementById('hiddenBtn')
 const searchBox = document.getElementById('searchBox')
 
-function getSelected() {
-    let values = [];
-    options.forEach(el => {
-        if (el.firstElementChild.checked === true) {
-            values.push(el.innerText);
-        }
-    })
-    listResult(values)
-    return values;
-}
 
 label.addEventListener('input', showConsole)
 searchInput.addEventListener('keyup', function (event) {
     filterList(event.target.value)
 })
 btn.addEventListener('click', () => {
-    console.log(getSelected())
-    alert(getSelected())
+    console.log(getSelected('values'))
+    alert(getSelected('values'))
 })
 
 function showConsole() {
+    getSelected('values').length
     options.forEach(el => {
         if (el.firstElementChild.checked === true) {
             el.className = 'activeLabel'
@@ -126,7 +120,16 @@ function handleCancel() {
     })
 }
 
-
+function getSelected() {
+    let values = [];
+    options.forEach(el => {
+        if (el.firstElementChild.checked === true) {
+            values.push(el.innerText);
+        }
+    })
+    listResult(values)
+    return values;
+}
 
 let show = true;
 
