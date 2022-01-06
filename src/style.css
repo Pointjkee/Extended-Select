@@ -1,0 +1,228 @@
+.main {
+    padding-left: 20px;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.hiddenBtnOn {
+    color: #272526;
+    display: none;
+}
+
+.resultSelected {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.hiddenBtnOn button {
+    border: none;
+    cursor: pointer;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    background: #FAFAFA;
+}
+
+.hiddenBtnOff {
+    color: #272526;
+    padding-right: 13px;
+}
+
+.hiddenBtnOff button {
+    border: none;
+    cursor: pointer;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    background: #FAFAFA;
+}
+
+
+h1 {
+    color: green;
+}
+
+.head {
+    width: 640px;
+    height: 122.61px;
+    left: 0px;
+    top: 1px;
+    background: #FAFAFA;
+    box-shadow: 0px 1px 0px #D9D9D9;
+}
+
+.result {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #272526;
+}
+
+.multipleSelection {
+    width: 640px;
+    background-color: #BCC2C1;
+}
+
+.selectBox {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.selectBox select {
+    width: 590px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #272526;
+    height: 37px;
+    background: linear-gradient(0deg, rgba(3, 91, 119, 0.05), rgba(3, 91, 119, 0.05)), #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+#checkBoxes {
+    display: none;
+    background: #FFFFFF;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#checkBoxes label {
+    display: block;
+    height: 34.38px;
+    left: 0;
+    top: 17px;
+    bottom: 17px;
+    vertical-align: middle;
+    line-height: 35px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1px;
+    color: #272526;
+}
+
+
+#checkBoxes label:hover {
+    background: linear-gradient(0deg, rgba(3, 91, 119, 0.05), rgba(3, 91, 119, 0.05)), #FFFFFF;
+}
+
+.activeLabel {
+    background: linear-gradient(0deg, rgba(3, 91, 119, 0.05), rgba(3, 91, 119, 0.05)), #FFFFFF;
+}
+
+.buttons {
+    position: absolute;
+    top: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    width: 640px;
+    background: #FAFAFA;
+    height: 68.75px;
+    box-shadow: 0px -1px 0px #D9D9D9;
+}
+
+.buttons #btn1 {
+    background: #035B77;
+    border-radius: 4px;
+    color: white;
+    height: 45px;
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 14px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 8px;
+}
+
+.buttons #btn1:hover {
+    cursor: pointer;
+}
+
+.buttons #btn2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #000000;
+    opacity: 0.6;
+    margin-top: 20px;
+    margin-right: 14px;
+    width: 80px;
+    height: 24px;
+    border: none;
+    background: #FAFAFA
+}
+
+.buttons #btn2:hover {
+    cursor: pointer;
+}
+
+.searchBox {
+    display: none;
+}
+
+.searchBox2 input {
+    width: 590px;
+    margin-left: 20px;
+    margin-top: 3px;
+    padding-top: 3px;
+    font-family: "Roboto", sans-serif;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
