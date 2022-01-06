@@ -11,10 +11,13 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": "https://github.com/Pointjkee/Extended-Select.git",
   "author": "'Denis' <razoranet@gmail.com>",
+  "homepage": "https://pointjkee.github.io/Extended-Select/",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.7",
