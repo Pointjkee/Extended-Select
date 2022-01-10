@@ -51,9 +51,9 @@ document.querySelector('.visually-hidden').outerHTML = `
             </div>
         </div>
      <div class="buttons">
-      <button id="btn1">Применить</button>
-      <button id="btn2" onclick="handleCancel()">Очистить</button>
-</div>
+         <button id="btn1">Применить</button>
+         <button id="btn2" onclick="handleCancel()">Очистить</button>
+     </div>
 </div>
 `
 
@@ -126,10 +126,7 @@ function handleCancel() {
     })
 }
 
-
-
 let show = true;
-
 function showCheckboxes() {
     if (show) {
         label.style.display = "block";
